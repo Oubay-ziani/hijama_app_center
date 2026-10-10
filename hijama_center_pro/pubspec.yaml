@@ -1,0 +1,65 @@
+name: hijama_center_pro
+description: "Professional Hijama Clinic Management Mobile Client"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  
+  # State Management
+  flutter_riverpod: ^2.5.1
+  
+  # Routing
+  go_router: ^14.2.0
+  
+  # Firebase
+  firebase_core: ^3.13.1
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.6
+  google_sign_in: ^6.2.1
+
+  # Local Settings Storage
+  shared_preferences: ^2.2.3
+  
+  # Charts
+  fl_chart: ^0.68.0
+  
+  # QR & Barcode Utilities
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.1.1
+  
+  # Localisation
+  intl: 0.20.2
+
+  # Reports
+  pdf: ^3.12.0
+  excel: ^4.0.6
+  path_provider: ^2.1.6
+  open_filex: ^4.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  generate: true # Enable automatic localizations build generation
+  assets:
+    - assets/icons/
